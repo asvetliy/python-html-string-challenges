@@ -18,7 +18,7 @@ and concatenation only. No parsers, no libraries — pure string primitives.
 | 2 | Update Stylesheet and Script Sources | `challenge/02-assets` | ✅ Done |
 | 3 | Inject Heading Tags | `challenge/03-headings` | ✅ Done |
 | 4 | Add Paragraph and Image Tags | `challenge/04-content` | ✅ Done |
-| 5 | Full Page Builder | `challenge/05-full-page` | ⏳ Pending |
+| 5 | Full Page Builder | `challenge/05-full-page` | ✅ Done |
 
 ## Outputs
 
@@ -88,3 +88,26 @@ tags ended up outside <body> or contain a syntax error — check the source.
 and the paragraph should be visible. The `<img>` tag will show a broken image icon since `hero.jpg` 
 does not exist locally — that is expected. Use View Page Source to confirm the tag order matches 
 the expected output in the challenge instructions: headings first, then `<p>`, then `<img>`, all inside `<body>`.
+
+
+### Challenge 05 — Full Page Builder
+
+**Concepts:** `.replace()`, f-strings, string concatenation
+
+**Solution file:** `challenge_05_full_page.py`
+
+**HTML output file:** `html_outputs/challenge_05_output.html`
+
+**Terminal output:**
+
+![Challenge 5 Terminal](screenshots/challenge_05_terminal.png)
+
+**Browser preview:** Challenge 5 prints a validation report before the final HTML. Your terminal screenshot must 
+capture both the validation report and the opening lines of the HTML. If your terminal window is too short to show 
+everything at once, scroll up after running and take two screenshots — save them as `challenge_05_terminal_validation.png` 
+and `challenge_05_terminal_html.png` and reference both in the `README` output section.
+
+When redirecting to the HTML file, be aware that the validation report will also be written into it, which will appear 
+as text at the top of the page in the browser. To save a clean HTML file, you have two options: temporarily comment out 
+the `print()` calls for the validation report before redirecting, or add a second `print()` to a separate script that only 
+prints the final html variable. Either approach is valid — add a comment in your code explaining which you chose.
