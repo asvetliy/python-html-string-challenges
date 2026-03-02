@@ -67,7 +67,7 @@ Your terminal screenshot must show the printed `<link>` and `<script>` lines cle
 
 ![Challenge 3 Terminal](screenshots/challenge_03_terminal.png)
 
-**Browser preview:** Open the HTML output in a browser — the <h1>, <h2>, and <h3> headings 
+**Browser preview:** Open the HTML output in a browser — the `<h1>`, `<h2>`, and `<h3>` headings 
 must be visible on the page with correct visual hierarchy. A blank page usually means the heading 
 tags ended up outside <body> or contain a syntax error — check the source.
 
